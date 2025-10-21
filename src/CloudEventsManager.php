@@ -40,7 +40,7 @@ final class CloudEventsManager implements ManagerInterface
         $event = new \CloudEvents\V1\CloudEvent(
             (string) \Symfony\Component\Uid\Uuid::v4(),
             'https://test.localhost',
-            'com.gyroscops.cloud.v1.command.WorkflowExecutionStarted',
+            'com.gyroscops.cloud.v1.command.WorkflowExecutionUpdated',
             [
                 'id' => '0000-0000-0000-0000',
                 'time' => new \DateTimeImmutable(timezone: new DateTimeZone('UTC')),
@@ -62,7 +62,7 @@ final class CloudEventsManager implements ManagerInterface
         $event = new \CloudEvents\V1\CloudEvent(
             (string) \Symfony\Component\Uid\Uuid::v4(),
             'https://test.localhost',
-            'com.gyroscops.cloud.v1.command.WorkflowExecutionStarted',
+            'com.gyroscops.cloud.v1.command.WorkflowExecutionTerminated',
             [
                 'id' => '0000-0000-0000-0000',
                 'time' => new \DateTimeImmutable(timezone: new DateTimeZone('UTC')),
@@ -84,7 +84,7 @@ final class CloudEventsManager implements ManagerInterface
         $event = new \CloudEvents\V1\CloudEvent(
             (string) \Symfony\Component\Uid\Uuid::v4(),
             'https://test.localhost',
-            'com.gyroscops.cloud.v1.command.WorkflowExecutionStarted',
+            'com.gyroscops.cloud.v1.command.WorkflowExecutionInterrupted',
             [
                 'id' => '0000-0000-0000-0000',
                 'time' => new \DateTimeImmutable(timezone: new DateTimeZone('UTC')),
@@ -106,7 +106,7 @@ final class CloudEventsManager implements ManagerInterface
         $event = new \CloudEvents\V1\CloudEvent(
             (string) \Symfony\Component\Uid\Uuid::v4(),
             'https://test.localhost',
-            'com.gyroscops.cloud.v1.command.WorkflowExecutionStarted',
+            'com.gyroscops.cloud.v1.command.WorkflowExecutionResumed',
             [
                 'id' => '0000-0000-0000-0000',
                 'time' => new \DateTimeImmutable(timezone: new DateTimeZone('UTC')),
@@ -128,7 +128,7 @@ final class CloudEventsManager implements ManagerInterface
         $event = new \CloudEvents\V1\CloudEvent(
             (string) \Symfony\Component\Uid\Uuid::v4(),
             'https://test.localhost',
-            'com.gyroscops.cloud.v1.command.WorkflowExecutionStarted',
+            'com.gyroscops.cloud.v1.command.WorkflowExecutionFinished',
             [
                 'id' => '0000-0000-0000-0000',
                 'time' => new \DateTimeImmutable(timezone: new DateTimeZone('UTC')),
