@@ -19,7 +19,7 @@
         }
     ],
     "require": {
-        "php": "^8.2",
+        "php": "^8.4",
         "psr/log": "^3.0",
         "php-etl/pipeline-contracts": "0.4.*",
         "cloudevents/sdk-php": "^1.0",
